@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+
+</head>
+
+<body>
+    <h1>Mẫu điền thông tin</h1>
+    <label for="name">Họ và tên</label>
+    <input type="text" id="name">
+
+    <label for="address">Địa chỉ</label>
+    <input type="text" id="address">
+
+    <label for="phonenumber">Số điện thoại</label>
+    <input type="text" id="phonenumber">
+
+    <input type="submit" value="Submit" onclick="onClick()">
+    <script>
+
+        function onClick() {
+            var name = document.getElementById("name").value;
+            var address = document.getElementById("address").value;
+            var phonenumber = document.getElementById("phonenumber").value;
+            document.write("Thông tin cá nhân");
+            document.write('<p> Ho va ten: ' + name + '</p>')
+            document.write('<p> Dia chi: ' + address + '</p>')
+            document.write('<p> SDT: ' + phonenumber + '</p>')
+        }
+    </script>
+
+</body>
+
+</html>
